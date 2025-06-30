@@ -1,1 +1,0 @@
-# cigarmanor-prototype
