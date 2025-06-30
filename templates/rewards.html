@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html>
-<head><title>Rewards</title></head>
+<html><head><title>Rewards</title></head>
 <body>
-  <h1>Loyalty Points</h1>
+  <h1>Rewards Dashboard</h1>
   <p>User: {{ data.user }}</p>
   <p>Points: {{ data.points }}</p>
-  <h3>History</h3>
   <ul>
-    {% for item in data.history %}
-      <li>{{ item.date }} - {{ item.action }} (+{{ item.points }} pts)</li>
-    {% endfor %}
+  {% for item in data.history %}
+    <li>{{ item.date }} - {{ item.action }} ({{ item.points }} pts)</li>
+  {% endfor %}
   </ul>
-</body>
-</html>
+</body></html>
