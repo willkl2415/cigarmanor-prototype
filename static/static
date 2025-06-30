@@ -1,1 +1,54 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f8f5f0;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1, h2 {
+    font-weight: bold;
+    margin-top: 30px;
+    color: #222;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #8b0000;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.shop-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    width: 220px;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.shop-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.footer {
+    font-size: 0.9em;
+    margin-top: 40px;
+    color: #777;
+}
 
