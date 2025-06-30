@@ -61,3 +61,7 @@ nav a:hover {
     margin-top: 40px;
     color: #777;
 }
+.shop-container {
+    overflow-x: auto;
+    scrollbar-width: auto;
+}
