@@ -1,8 +1,90 @@
 <!DOCTYPE html>
-<html>
-<head><title>Shop Cigars</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shop Cigars – The Cigar Manor</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f5f3ef;
+      padding: 30px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 1em;
+    }
+
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .product {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 250px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .product h3 {
+      margin-top: 0;
+      color: #8b0000;
+    }
+
+    .price {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    a.back-link {
+      display: inline-block;
+      margin-top: 30px;
+      color: #8b0000;
+      text-decoration: none;
+    }
+
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
 <body>
+
   <h1>Shop Our Cigars</h1>
-  <p>Coming soon: a curated selection of premium cigars.</p>
+
+  <div class="product-list">
+    <div class="product">
+      <h3>Montecristo Minis</h3>
+      <p>Small spicy aromatic cigars in tins of 10. Perfect for short smokes.</p>
+      <p class="price">£13.20</p>
+    </div>
+
+    <div class="product">
+      <h3>Cohiba Shorts</h3>
+      <p>Premium cigarillos in signature yellow branding. Ideal for travel.</p>
+      <p class="price">£32.80</p>
+    </div>
+
+    <div class="product">
+      <h3>Punch 1943</h3>
+      <p>A classic Havana cigar with a rich history and smooth draw.</p>
+      <p class="price">£22.00</p>
+    </div>
+
+    <div class="product">
+      <h3>Montecristo Puritos</h3>
+      <p>Elegant cigarillos with medium body, sold in handy 5-packs.</p>
+      <p class="price">£14.08</p>
+    </div>
+  </div>
+
+  <a href="/" class="back-link">← Back to Home</a>
+
 </body>
 </html>
