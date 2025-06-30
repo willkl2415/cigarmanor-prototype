@@ -1,0 +1,9 @@
+{
+  "user": "John Smith",
+  "points": 85,
+  "history": [
+    { "date": "2025-06-01", "action": "QR Scan - Montecristo", "points": 20 },
+    { "date": "2025-06-12", "action": "Event Attendance", "points": 25 },
+    { "date": "2025-06-18", "action": "QR Scan - Cohiba", "points": 40 }
+  ]
+}
