@@ -2,46 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Shop Our Cigars</title>
+    <title>Shop Cigars</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <h1>Shop Our Cigars</h1>
 
-    <div class="shop-container">
+    <div class="shop-item">
+        <img src="{{ url_for('static', filename='Montecristo_Clubs.png') }}" alt="Montecristo Clubs">
+        <p>Montecristo Clubs – £14.50</p>
+    </div>
 
-        <div class="shop-item">
-            <img src="{{ url_for('static', filename='cohiba-shorts.jpg') }}" alt="Cohiba Shorts">
-            <h2>Cohiba Shorts</h2>
-            <p>Premium cigarillos in signature yellow branding. Ideal for travel.</p>
-            <strong>£32.80</strong>
-        </div>
+    <div class="shop-item">
+        <img src="{{ url_for('static', filename='Montecristo_Edmundo.png') }}" alt="Montecristo Edmundo">
+        <p>Montecristo Edmundo – £32.20</p>
+    </div>
 
-        <div class="shop-item">
-            <img src="{{ url_for('static', filename='montecristo-minis.jpg') }}" alt="Montecristo Minis">
-            <h2>Montecristo Minis</h2>
-            <p>Small spicy aromatic cigars in tins of 10. Perfect for short smokes.</p>
-            <strong>£13.20</strong>
-        </div>
+    <div class="shop-item">
+        <img src="{{ url_for('static', filename='montecristo_minis.png') }}" alt="Montecristo Minis">
+        <p>Montecristo Minis – £13.20</p>
+    </div>
 
-        <div class="shop-item">
-            <img src="{{ url_for('static', filename='punch-1943.jpg') }}" alt="Punch 1943">
-            <h2>Punch 1943</h2>
-            <p>A classic Havana cigar with a rich history and smooth draw.</p>
-            <strong>£22.00</strong>
-        </div>
-
-        <div class="shop-item">
-            <img src="{{ url_for('static', filename='montecristo-puritos.jpg') }}" alt="Montecristo Puritos">
-            <h2>Montecristo Puritos</h2>
-            <p>Elegant cigarillos with medium body, sold in handy 5-packs.</p>
-            <strong>£14.08</strong>
-        </div>
-
+    <div class="shop-item">
+        <img src="{{ url_for('static', filename='montecristo_minis2.png') }}" alt="Montecristo Minis 2">
+        <p>Montecristo Minis 2 – £14.08</p>
     </div>
 
     <div class="footer">
-        <a href="{{ url_for('index') }}">← Back to Home</a>
+        &copy; 2025 The Cigar Manor. All rights reserved.
     </div>
 </body>
 </html>
