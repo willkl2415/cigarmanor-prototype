@@ -7,52 +7,55 @@
 </head>
 <body>
 
-    <!-- Contact Bar -->
-    <div class="top-contact">
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
         <span>📞 0117 462 2767</span>
         <span>📧 info@thecigarmanor.co.uk</span>
     </div>
 
-    <!-- Logo and Banner -->
-    <div class="banner">
+    <!-- Logo Section -->
+    <div class="logo-section">
         <h1>THE<br>CIGAR MANOR</h1>
-        <h2>EST 2021</h2>
+        <p>EST 2021</p>
     </div>
 
     <!-- Navigation Menu -->
     <nav class="navbar">
-        <a href="#">HOME</a>
-        <a href="#">CIGARILLOS</a>
-        <a href="#">SNUSS</a>
-        <a href="#">CUBAN CIGARS</a>
-        <a href="#">NEW WORLD CIGARS</a>
-        <a href="#">ACCESSORIES & GIFTS</a>
-        <a href="#">TOBACCO & PIPES</a>
-        <a href="#">EVENTS</a>
-        <span class="nav-icons">🔍 🛒 0 Items</span>
+        <ul>
+            <li>HOME</li>
+            <li>CIGARILLOS</li>
+            <li>SNUSS</li>
+            <li>CUBAN CIGARS</li>
+            <li>NEW WORLD CIGARS</li>
+            <li>ACCESSORIES & GIFTS</li>
+            <li>TOBACCO & PIPES</li>
+            <li>EVENTS</li>
+            <li>🔍</li>
+            <li>🛒 0 Items</li>
+        </ul>
     </nav>
 
-    <!-- Image Slider Section -->
+    <!-- Slider Section -->
     <div class="slider-container">
-        <img src="{{ url_for('static', filename='cohiba_banner.png') }}" alt="Cohiba Range">
+        <img src="{{ url_for('static', filename='cohiba_slider.png') }}" alt="Cohiba Range" class="slider-image">
     </div>
 
-    <!-- Welcome Section -->
-    <div class="welcome">
+    <!-- Welcome Message & Buttons -->
+    <div class="welcome-section">
         <h2>Welcome to The Cigar Manor</h2>
         <p>Your destination for premium Cuban cigars and unforgettable tasting experiences</p>
-        <div class="button-row">
-            <a href="/shop">Shop Cigars</a>
-            <a href="#">Rewards</a>
-            <a href="#">Scan QR</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Events</a>
+        <div class="button-group">
+            <a href="/shop"><button>Shop Cigars</button></a>
+            <button>Rewards</button>
+            <button>Scan QR</button>
+            <button>Contact Us</button>
+            <button>Events</button>
         </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        © 2025 The Cigar Manor. All rights reserved.
+        <p>© 2025 The Cigar Manor. All rights reserved.</p>
     </footer>
 
 </body>
