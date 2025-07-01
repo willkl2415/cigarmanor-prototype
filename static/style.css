@@ -1,84 +1,80 @@
 body {
   margin: 0;
-  font-family: 'Georgia', serif;
-  background-color: #f9f1df;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fdf6e3;
+  color: #2e2e2e;
 }
 
 .top-bar {
-  background-color: #fdf0d6;
-  color: #4c0000;
+  background-color: #f5e9cb;
+  color: #4b1e17;
   text-align: right;
-  padding: 5px 20px;
+  padding: 4px 20px;
   font-size: 14px;
-  font-family: 'Georgia', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
-header {
-  background-color: #733a2d;
-  color: #f9f1df;
+.header {
+  background-color: #6f3628;
+  color: #fff;
   text-align: center;
-  padding: 20px 0 10px 0;
+  padding: 20px 0 0;
+  font-family: 'Roboto', sans-serif;
 }
 
-header h1 {
+.brand-name {
+  font-size: 36px;
   margin: 0;
-  font-size: 32px;
   line-height: 1.2;
+  font-weight: bold;
 }
 
-header p {
+.est {
   margin: 0;
-  font-size: 16px;
-}
-
-nav {
-  background-color: #733a2d;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .navbar {
-  list-style: none;
+  background-color: #8c4d3b;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 0;
+}
+
+.navbar ul {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
-  padding: 10px 0;
+  list-style-type: none;
+  padding: 0;
   margin: 0;
 }
 
 .navbar li {
-  margin: 0 10px;
+  margin: 0 8px;
 }
 
-.navbar li a {
-  color: #f9f1df;
+.navbar a {
+  display: inline-block;
+  padding: 12px 10px;
+  color: #fff;
   text-decoration: none;
+  font-size: 14px;
   font-weight: bold;
-  font-size: 13px;
-  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
 }
 
-.cart-icon {
-  display: flex;
-  align-items: center;
-  gap: 5px;
+.navbar a:hover {
+  background-color: #5d2d24;
+  border-radius: 4px;
 }
 
-.banner {
-  display: flex;
-  justify-content: center;
-  background-color: #d4913f;
-}
-
-.banner img {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-}
-
-footer {
+.footer {
+  background-color: #fdf6e3;
+  color: #999;
   text-align: center;
   padding: 20px 0;
   font-size: 14px;
-  color: #7c7c7c;
-  border-top: 1px solid #ccc;
-  margin-top: 20px;
 }
