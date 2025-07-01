@@ -1,61 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>The Cigar Manor</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8">
+  <title>The Cigar Manor</title>
+  <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
+  <div class="top-bar">
+    <span>📞 0117 462 2767</span>
+    <span>📧 info@thecigarmanor.co.uk</span>
+  </div>
 
-    <!-- Top Contact Bar -->
-    <div class="top-contact-bar">
-        <span>📞 0117 462 2767</span>
-        <span>📧 info@thecigarmanor.co.uk</span>
-    </div>
+  <header class="site-header">
+    <h1>THE<br>CIGAR MANOR</h1>
+    <p>EST 2021</p>
+  </header>
 
-    <!-- Logo and Header -->
-    <header class="site-header">
-        <h1 class="site-title">THE<br>CIGAR MANOR</h1>
-        <p class="site-subtitle">EST 2021</p>
-    </header>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">CIGARILLOS</a></li> 
+      <li><a href="#">SNUSS</a></li> 
+      <li><a href="#">CUBAN CIGARS</a></li> 
+      <li><a href="#">NEW WORLD CIGARS</a></li> 
+      <li><a href="#">ACCESSORIES & GIFTS</a></li> 
+      <li><a href="#">TOBACCO & PIPES</a></li> 
+      <li><a href="#">Rewards</a></li> 
+      <li><a href="#">Scan QR</a></li> 
+      <li><a href="#">EVENTS</a></li> 
+      <li><a href="#">Contact Us</a></li>
+      <li class="right-icons">
+        <span class="search-icon">🔍</span>
+        <span class="cart-icon">🛒 0 Items</span>
+      </li>
+    </ul>
+  </nav>
 
-    <!-- Navigation Menu -->
-    <nav class="nav-menu">
-        <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">CIGARILLOS</a></li>
-            <li><a href="#">SNUSS</a></li>
-            <li><a href="#">CUBAN CIGARS</a></li>
-            <li><a href="#">NEW WORLD CIGARS</a></li>
-            <li><a href="#">ACCESSORIES & GIFTS</a></li>
-            <li><a href="#">TOBACCO & PIPES</a></li>
-            <li><a href="#">EVENTS</a></li>
-            <li class="cart"><span>🔍</span> <span>🛒 0 Items</span></li>
-        </ul>
-    </nav>
-
-    <!-- Image Slider -->
-    <div class="slider">
-        <img src="{{ url_for('static', filename='cohiba_banner.png') }}" alt="Cohiba Range" class="slider-image">
-    </div>
-
-    <!-- Welcome Section -->
-    <main class="welcome-section">
-        <h2>Welcome to The Cigar Manor</h2>
-        <p>Your destination for premium Cuban cigars and unforgettable tasting experiences</p>
-        <div class="action-buttons">
-            <a href="#" class="button">Shop Cigars</a>
-            <a href="#" class="button">Rewards</a>
-            <a href="#" class="button">Scan QR</a>
-            <a href="#" class="button">Contact Us</a>
-            <a href="#" class="button">Events</a>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>© 2025 The Cigar Manor. All rights reserved.</p>
-    </footer>
-
+  <main class="hero-section">
+    <img src="/static/cohiba_banner.png" alt="Cohiba Range">
+  </main>
 </body>
 </html>
