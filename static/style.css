@@ -1,103 +1,87 @@
-/* Apply Roboto font sitewide */
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #fff7e6;
-  color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f3e4;
+    color: #222;
 }
 
-/* Top contact bar */
-.top-bar {
-  background-color: #f6eddc;
-  color: #000;
-  font-size: 14px;
-  text-align: right;
-  padding: 5px 20px;
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 40px 0 20px 0;
+    font-size: 15px;
 }
 
-/* Header branding */
-header {
-  background-color: #6c3428;
-  color: white;
-  text-align: center;
-  padding: 20px 10px 10px;
-  font-weight: 700;
-  font-size: 24px;
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    flex-wrap: wrap;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 32px;
-  text-transform: uppercase;
+.footer-column {
+    flex: 1;
+    padding: 20px;
+    min-width: 250px;
 }
 
-/* Navigation bar */
-nav {
-  background-color: #8c4431;
+.footer-column h3 {
+    color: #ffa726;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  list-style-type: none;
+.footer-column ul {
+    list-style: none;
+    padding: 0;
 }
 
-nav li {
-  margin: 0 10px;
+.footer-column ul li {
+    margin-bottom: 8px;
+    color: #fff;
 }
 
-nav a {
-  display: block;
-  padding: 12px 10px;
-  color: white;
-  font-size: 13px;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
+.footer-column ul li::before {
+    content: '•';
+    color: #b23b3b;
+    margin-right: 8px;
 }
 
-nav a:hover {
-  background-color: #5c2d20;
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
-/* Hero banner image */
-.hero-banner img {
-  width: 100%;
-  height: auto;
-  display: block;
+.footer-column ul li a:hover {
+    text-decoration: underline;
 }
 
-/* EMS Guarantee Section */
-.ems-section {
-  text-align: center;
-  background-color: #fff7e6;
-  padding: 40px 20px;
+.contact-block {
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
-.ems-section h2 {
-  color: #c47a1d;
-  font-size: 20px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-weight: 700;
+.contact-block a {
+    color: #fff;
+    text-decoration: underline;
 }
 
-.ems-section img {
-  max-width: 100%;
-  height: auto;
+.footer-column.right {
+    text-align: right;
 }
 
-/* Footer */
-footer {
-  background-color: #f6eddc;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
+.ems-image {
+    max-width: 240px;
+    height: auto;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #ccc;
+    padding-top: 20px;
+    font-size: 14px;
 }
