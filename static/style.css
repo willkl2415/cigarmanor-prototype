@@ -1,68 +1,108 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fcf3df;
 }
 
-.container {
+header {
+    background-color: #6b2e1e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+nav {
+    background-color: #8d4733;
+}
+
+.nav-links {
+    list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
-.left-panel {
-    width: 35%;
-    background-color: #f4f4f4;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-y: auto;
-    text-align: center; /* For heading and image */
+.nav-links li {
+    margin: 5px 10px;
 }
 
-.right-panel {
-    width: 65%;
-    padding: 20px;
-    box-sizing: border-box;
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
 }
 
-input[type="text"],
-select {
+.banner img {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    font-size: 14px;
-}
-
-button {
-    padding: 10px 15px;
-    margin-top: 5px;
-    margin-right: 5px;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.result-block {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ccc;
-}
-
-/* ✅ Adjusted image size */
-.chess-image {
-    width: 40%; /* 25% smaller than before */
-    height: auto;
-    margin: 10px auto;
     display: block;
 }
 
-/* ✅ Heading styling remains centered */
-.welcome-heading {
-    font-size: 1.5em;
-    font-weight: bold;
-    white-space: nowrap;
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 30px 20px;
 }
 
-/* ✅ Align text under image to left */
-.left-panel p {
-    text-align: left;
-    margin-top: 15px;
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+}
+
+.footer-column h3 {
+    color: #ff9900;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-column a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.ems-badge {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    background-color: #1e1e1e;
+    color: #ccc;
+    padding: 10px;
+    font-size: 14px;
 }
