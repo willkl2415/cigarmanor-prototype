@@ -1,21 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcome to The Cigar Manor</title>
+    <meta charset="UTF-8">
+    <title>The Cigar Manor</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Welcome to The Cigar Manor</h1>
-    <p>Your destination for premium Cuban cigars and unforgettable tasting experiences</p>
-    <nav>
-        <a href="/shop">Shop Cigars</a> |
-        <a href="/rewards">Rewards</a> |
-        <a href="/scan">Scan QR</a> |
-        <a href="/contact">Contact Us</a> |
-        <a href="/events">Events</a>
-    </nav>
-    <div class="footer">
-        <p>&copy; 2025 The Cigar Manor. All rights reserved.</p>
+    <!-- Top banner -->
+    <div class="top-banner">
+        <span>📞 0117 462 2767</span>
+        <span>📧 info@thecigarmanor.co.uk</span>
     </div>
+
+    <!-- Logo and Nav -->
+    <header>
+        <div class="logo">THE <span>CIGAR MANOR</span><br><small>EST 2021</small></div>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">CIGARILLOS</a>
+            <a href="#">SNUSS</a>
+            <a href="#">CUBAN CIGARS</a>
+            <a href="#">NEW WORLD CIGARS</a>
+            <a href="#">ACCESSORIES & GIFTS</a>
+            <a href="#">TOBACCO & PIPES</a>
+            <a href="#">EVENTS</a>
+            <a href="#">🔍</a>
+            <a href="#">🛒 0 Items</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section (Slider Style, 3 static for now) -->
+    <div class="hero-slider">
+        <div class="slide">
+            <img src="{{ url_for('static', filename='banner_cohiba.png') }}" alt="Cohiba Range">
+            <div class="slide-caption">
+                <h1>COHIBA</h1>
+                <p>Habanos S.A.</p>
+                <button>Shop now</button>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{{ url_for('static', filename='banner_montecristo.png') }}" alt="Montecristo Range">
+            <div class="slide-caption">
+                <h1>MONTECRISTO</h1>
+                <p>The Montecristo Range</p>
+                <button>Shop now</button>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{{ url_for('static', filename='banner_hoyo.png') }}" alt="Hoyo de Monterrey">
+            <div class="slide-caption">
+                <h1>HOYO DE MONTERREY</h1>
+                <p>Serie Le Hoyo Epicure</p>
+                <button>Shop now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <h2>Welcome to The Cigar Manor</h2>
+        <p>Your destination for premium Cuban cigars and unforgettable tasting experiences</p>
+        <div class="home-links">
+            <a href="/shop">Shop Cigars</a>
+            <a href="/rewards">Rewards</a>
+            <a href="/scan">Scan QR</a>
+            <a href="/contact">Contact Us</a>
+            <a href="/events">Events</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 The Cigar Manor. All rights reserved.</p>
+    </footer>
 </body>
 </html>
