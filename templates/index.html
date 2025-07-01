@@ -1,74 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>The Cigar Manor</title>
-  <link rel="stylesheet" href="/static/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <title>The Cigar Manor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
-  <header class="main-header">
-    <h1>THE CIGAR MANOR EST 2021</h1>
-  </header>
+    <header class="header">
+        <div class="logo">
+            <h1>THE CIGAR MANOR EST 2021</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">CIGARILLOS</a></li>
+                <li><a href="#">SNUSS</a></li>
+                <li><a href="#">CUBAN CIGARS</a></li>
+                <li><a href="#">NEW WORLD CIGARS</a></li>
+                <li><a href="#">ACCESSORIES & GIFTS</a></li>
+                <li><a href="#">TOBACCO & PIPES</a></li>
+                <li><a href="#">REWARDS</a></li>
+                <li><a href="#">SCAN QR</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <nav class="navbar">
-    <ul>
-      <li><a href="#">HOME</a></li>
-      <li><a href="#">CIGARILLOS</a></li>
-      <li><a href="#">SNUSS</a></li>
-      <li><a href="#">CUBAN CIGARS</a></li>
-      <li><a href="#">NEW WORLD CIGARS</a></li>
-      <li><a href="#">ACCESSORIES & GIFTS</a></li>
-      <li><a href="#">TOBACCO & PIPES</a></li>
-      <li><a href="#">REWARDS</a></li>
-      <li><a href="#">SCAN QR</a></li>
-      <li><a href="#">EVENTS</a></li>
-      <li><a href="#">CONTACT US</a></li>
-    </ul>
-  </nav>
+    <section class="banner">
+        <img src="{{ url_for('static', filename='cohiba_banner.png') }}" alt="Cohiba Range">
+    </section>
 
-  <section class="banner">
-    <img src="/static/cohiba_banner.png" alt="Cohiba Banner" />
-  </section>
+    <footer class="footer">
+        <div class="footer-section help-info">
+            <h3>Help & Information</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Website Terms</a></li>
+                <li><a href="#">Refunds & Returns</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">My Account</a></li>
+            </ul>
+        </div>
 
-  <footer class="footer">
-    <div class="footer-column">
-      <h3>Help & Information</h3>
-      <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Website Terms</a></li>
-        <li><a href="#">Refunds & Returns</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">My Account</a></li>
-      </ul>
-    </div>
-    <div class="footer-column center">
-      <h3>Contact</h3>
-      <p><strong>Newport</strong><br>
-      Havana Cigar Point<br>
-      The Cigar Manor Ltd<br>
-      182a Cardiff Rd<br>
-      Newport NP20 3AE<br>
-      <a href="mailto:cigarmanor@gmail.com">cigarmanor@gmail.com</a><br>
-      0117 462 2767</p>
+        <div class="footer-section contact-info">
+            <h3>Contact</h3>
+            <div>
+                <strong>Newport</strong><br>
+                Havana Cigar Point<br>
+                The Cigar Manor Ltd<br>
+                182a Cardiff Rd<br>
+                Newport NP20 3AE<br>
+                <a href="mailto:cigarmanor@gmail.com">cigarmanor@gmail.com</a><br>
+                0117 462 2767
+            </div>
+            <br>
+            <div>
+                <strong>Bristol</strong><br>
+                Havana Cigar Specialist<br>
+                35 Baldwin Street<br>
+                Bristol BS1 1RG<br>
+                <a href="mailto:cigarmanor@gmail.com">cigarmanor@gmail.com</a><br>
+                0117 462 2767
+            </div>
+        </div>
 
-      <p><strong>Bristol</strong><br>
-      Havana Cigar Specialist<br>
-      35 Baldwin Street<br>
-      Bristol BS1 1RG<br>
-      <a href="mailto:cigarmanor@gmail.com">cigarmanor@gmail.com</a><br>
-      0117 462 2767</p>
-    </div>
-    <div class="footer-column right">
-      <img src="/static/download.png" alt="EMS Guarantee" />
-    </div>
+        <div class="footer-section ems-badge">
+            <img src="{{ url_for('static', filename='ems_guarantee_badge.png') }}" alt="EMS Guarantee">
+        </div>
+    </footer>
+
     <div class="copyright">
-      <p>© 2025 The Cigar Manor. All rights reserved.</p>
+        <p>© 2025 The Cigar Manor. All rights reserved.</p>
     </div>
-  </footer>
 
 </body>
 </html>
