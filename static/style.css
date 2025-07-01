@@ -5,68 +5,80 @@ body {
 }
 
 .top-bar {
-  background-color: #fbe9d3;
+  background-color: #fdf0d6;
+  color: #4c0000;
   text-align: right;
-  padding: 4px 10px;
-  font-size: 13px;
-  color: #3e1f0d;
+  padding: 5px 20px;
+  font-size: 14px;
+  font-family: 'Georgia', serif;
 }
 
-.site-header {
-  text-align: center;
-  background-color: #6e3529;
+header {
+  background-color: #733a2d;
   color: #f9f1df;
-  padding: 10px 0;
+  text-align: center;
+  padding: 20px 0 10px 0;
 }
 
-.site-header h1 {
+header h1 {
   margin: 0;
-  font-size: 30px;
+  font-size: 32px;
   line-height: 1.2;
 }
 
-.site-header p {
-  margin: 4px 0 0;
+header p {
+  margin: 0;
   font-size: 16px;
 }
 
-.navbar {
-  background-color: #6e3529;
-  padding: 0;
+nav {
+  background-color: #733a2d;
 }
 
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+.navbar {
+  list-style: none;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 0;
+  margin: 0;
 }
 
 .navbar li {
-  display: inline;
-  padding: 8px 10px;
-  font-size: 13px;
-  white-space: nowrap;
+  margin: 0 10px;
 }
 
 .navbar li a {
   color: #f9f1df;
   text-decoration: none;
   font-weight: bold;
-}
-
-.navbar .right-icons {
-  margin-left: auto;
-  padding-right: 10px;
-  color: #f9f1df;
   font-size: 13px;
+  text-transform: uppercase;
 }
 
-.hero-section img {
+.cart-icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  background-color: #d4913f;
+}
+
+.banner img {
   width: 100%;
-  height: auto;
-  display: block;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #7c7c7c;
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
 }
