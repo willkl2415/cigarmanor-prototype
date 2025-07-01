@@ -1,157 +1,119 @@
-/* General Reset and Font */
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Georgia', serif;
     background-color: #f9f4e8;
-    color: #1d1b1b;
+    margin: 0;
+    padding: 0;
+    color: #2d1f0c;
 }
 
-/* Top banner */
-.top-banner {
-    background-color: #f5f1e0;
+/* Contact Bar */
+.top-contact {
+    background-color: #f3ede0;
+    color: #5a1e1e;
     text-align: center;
-    font-size: 14px;
-    padding: 6px;
-    color: #611111;
+    padding: 5px 0;
+    font-size: 0.9em;
 }
 
-/* Header and Nav */
-header {
-    background-color: #7f3d32;
-    color: white;
+/* Banner */
+.banner {
+    background-color: #70392d;
+    color: #fdf6e9;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.banner h2 {
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #70392d;
+    text-align: center;
     padding: 10px 0;
-    text-align: center;
 }
 
-.logo {
-    font-size: 28px;
-    font-weight: bold;
-    line-height: 1.2;
-}
-
-.logo span {
-    display: block;
-    font-size: 22px;
-    color: #f5f1e0;
-}
-
-nav {
-    margin-top: 8px;
-}
-
-nav a {
-    color: white;
+.navbar a {
+    color: #fff8e6;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 12px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.95rem;
 }
 
-nav a:hover {
+.navbar a:hover {
     text-decoration: underline;
 }
 
-/* Hero Slider (Static for now) */
-.hero-slider {
-    display: flex;
+.nav-icons {
+    float: right;
+    margin-right: 20px;
+    font-size: 0.9rem;
+}
+
+/* Slider */
+.slider-container {
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 20px;
-    padding: 20px;
-    background-color: #fff1d6;
+    white-space: nowrap;
+    background-color: #fcefd8;
 }
 
-.slide {
-    flex: 0 0 100%;
-    position: relative;
-    scroll-snap-align: start;
-}
-
-.slide img {
+.slider-container img {
     width: 100%;
     height: auto;
-    display: block;
-    border-radius: 10px;
+    display: inline-block;
 }
 
-.slide-caption {
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    background: rgba(127, 61, 50, 0.8);
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 300px;
-}
-
-.slide-caption h1 {
-    margin: 0 0 10px;
-    font-size: 30px;
-    letter-spacing: 1px;
-}
-
-.slide-caption p {
-    margin: 0 0 15px;
-}
-
-.slide-caption button {
-    background-color: #b84d3c;
-    color: white;
-    border: none;
-    padding: 10px 18px;
-    font-size: 14px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.slide-caption button:hover {
-    background-color: #a13d2f;
-}
-
-/* Welcome Section */
+/* Welcome */
 .welcome {
     text-align: center;
-    padding: 40px 20px;
+    padding: 30px 20px;
 }
 
 .welcome h2 {
-    font-size: 32px;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
 .welcome p {
-    font-size: 16px;
+    font-size: 1.1rem;
     margin-bottom: 20px;
-    color: #4d4d4d;
 }
 
-.home-links {
+.button-row {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 15px;
 }
 
-.home-links a {
-    background-color: #7f3d32;
-    color: white;
+.button-row a {
+    background-color: #70392d;
+    color: #fff8e6;
+    padding: 10px 20px;
+    border-radius: 6px;
     text-decoration: none;
-    padding: 10px 16px;
-    border-radius: 5px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
-.home-links a:hover {
-    background-color: #a13d2f;
+.button-row a:hover {
+    background-color: #5a2a1e;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
-    font-size: 13px;
-    color: #888;
+    padding: 20px 0;
+    font-size: 0.85rem;
+    color: #777;
+    background-color: transparent;
+    border-top: 1px solid #e1d4c1;
 }
