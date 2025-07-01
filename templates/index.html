@@ -1,75 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Check-Mate</title>
+    <meta charset="UTF-8">
+    <title>The Cigar Manor</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <script>
-        window.addEventListener('DOMContentLoaded', function () {
-            const form = document.querySelector('form');
-            document.querySelector('select[name="document"]').addEventListener('change', function () {
-                form.submit();
-            });
-            const refineInput = document.querySelector('input[name="refine"]');
-            let refineTimer;
-            refineInput.addEventListener('input', function () {
-                clearTimeout(refineTimer);
-                refineTimer = setTimeout(() => {
-                    form.submit();
-                }, 500);
-            });
-        });
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="left-panel">
-            <h1 class="title">Welcome to <strong>Check-Mate</strong></h1>
-            <img src="{{ url_for('static', filename='checkmate.png') }}" alt="Check-Mate Logo" class="logo-image">
-            <div class="description">
-                <p><strong>Check-Mate</strong> is a go-to application for Training Consultants, Analysts, Designers, and Decision-Makers who demand accuracy, assurance, and speed – without compromise.</p>
-                <p><strong>Check-Mate</strong> is a cutting-edge AI solution built to deliver instant clarity in high-complexity environments – especially those shaped by Systems Approach to Training (SAT) and Defence Systems Approach to Training (DSAT).</p>
-                <p>Inspired by the finality of the phrase in chess, <strong>Check-Mate</strong> empowers you to instantly search, filter, and interrogate massive volumes of structured documentation – training, guidance, standards, and more – using OpenAI’s natural language and intelligent keyword filters.</p>
-                <p>Ask a question. Get an answer. Not in 30 minutes—but in 5 seconds. Drawn directly from authoritative sources, every response is precise, context-rich, and ready for action.</p>
-                <p><strong>Check-Mate</strong> doesn’t just speed things up—it delivers time savings of up to 99.7%, transforming slow, manual searches into rapid, evidence-based decisions.</p>
-                <p><strong>Check-Mate</strong> isn’t just a nice to have. It’s your final move.</p>
-            </div>
+    <header>
+        <div class="logo">THE CIGAR MANOR EST 2021</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">CIGARILLOS</a></li>
+                <li><a href="#">SNUSS</a></li>
+                <li><a href="#">CUBAN CIGARS</a></li>
+                <li><a href="#">NEW WORLD CIGARS</a></li>
+                <li><a href="#">ACCESSORIES & GIFTS</a></li>
+                <li><a href="#">TOBACCO & PIPES</a></li>
+                <li><a href="#">REWARDS</a></li>
+                <li><a href="#">SCAN QR</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <img src="{{ url_for('static', filename='cohiba_banner.png') }}" alt="Cohiba Banner">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Help & Information</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Website Terms</a></li>
+                <li><a href="#">Refunds & Returns</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">My Account</a></li>
+            </ul>
         </div>
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <strong>Newport</strong><br>
+            Havana Cigar Point<br>
+            The Cigar Manor Ltd<br>
+            182a Cardiff Rd<br>
+            Newport NP20 3AE<br>
+            <a href="mailto:cigarmanor@gmail.com">cigarmanor@gmail.com</a><br>
+            0117 462 2767<br><br>
 
-        <div class="right-panel">
-            <form method="POST">
-                <label>Enter your question:</label>
-                <input type="text" name="query" value="{{ query }}">
-
-                <label>Filter by Document:</label>
-                <select name="document">
-                    <option>All Documents</option>
-                    {% for doc in documents %}
-                        <option value="{{ doc }}" {% if doc == selected_doc %}selected{% endif %}>{{ doc }}</option>
-                    {% endfor %}
-                </select>
-
-                <label>Refine Search:</label>
-                <input type="text" name="refine" value="{{ refine }}">
-
-                <button type="submit" class="green-btn">Ask Checkmate</button>
-                <button type="submit" name="clear" value="1" class="red-btn">Clear Search</button>
-            </form>
-
-            {% if results %}
-                <h2>Check-Mate’s Response ({{ result_count }} results)</h2>
-                <p><em>Use the document filter to view all matches.</em></p>
-                {% for result in results %}
-                    <div class="result-block">
-                        <p><strong>Document:</strong> {{ result['document'] }}</p>
-                        {% if result.get("section", "") != "Uncategorised" %}
-                            <p><strong>Section:</strong> {{ result.get("section") }}</p>
-                        {% endif %}
-                        <p><strong>Result {{ loop.index }}:</strong></p>
-                        <p>{{ result['content'] }}</p>
-                    </div>
-                {% endfor %}
-            {% endif %}
+            <strong>Bristol</strong><br>
+            Havana Cigar Specialist<br>
+            35 Baldwin Street<br>
+            Bristol BS1 1RG<br>
+            <a href="mailto:cigarmanor@gmail.com">cigarmanor@gmail.com</a><br>
+            0117 462 2767
         </div>
+        <div class="footer-column">
+            <img src="{{ url_for('static', filename='ems_guarantee_badge.png') }}" alt="EMS Guarantee" class="ems-badge">
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        © 2025 The Cigar Manor. All rights reserved.
     </div>
 </body>
 </html>
